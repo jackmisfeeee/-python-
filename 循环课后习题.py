@@ -1,8 +1,8 @@
 # 例1：构成无限循环，用户输入stop，停止循环。
-while 1:
-    ass = input()
-    if ass == 'stop':
-        break
+# while 1:
+#     ass = input()
+#     if ass == 'stop':
+#         break
 
 # 例2：用while循环计算1到100的数字和，直到和大于等于1000时停止。
 i = 1
@@ -31,7 +31,8 @@ for i in string:
         s += 1
 print(f"你输入的字符串中'o'出现了{s}次")
 # 例5：输出1到10的阶乘。
-s = 1
-for i in range(1, 11, 1):
-    s *= i
-print(f"10！={s}")
+for k in range(1, 11, 1):
+    s = 1
+    for i in range(1, k + 1, 1):
+        s *= i
+    print(f"{k}！={s}")
